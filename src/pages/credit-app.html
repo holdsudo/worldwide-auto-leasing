@@ -1,28 +1,12 @@
 title: Credit Application
 canonical: credit-app.html
 description: Secure online credit application for your lease with Worldwide Auto Leasing.
-body_class: page-credit
+head_extra: <meta http-equiv="refresh" content="0; url={{credit_url}}"><meta name="robots" content="noindex">
+scripts: <script>location.replace("{{credit_url}}");</script>
 ---
 <section class="page-hero"><div class="container">
   <span class="eyebrow eyebrow--light">Credit app</span>
-  <h1>Secure credit application</h1>
-  <p class="lead">Takes about five minutes. Your information goes directly to the bank's encrypted portal; it is not stored on this website.</p>
-  <span class="secure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg> 256-bit encrypted</span>
-</div></section>
-
-<section class="section"><div class="container stack">
-  <div class="app-frame" id="xdesk-app">
-    <div class="app-frame__placeholder">
-      <span class="eyebrow">Application portal</span>
-      <h2 class="mb-0">The secure application opens here</h2>
-      <p class="muted">The online credit application is being connected. In the meantime, request a quote and we will send you a secure application link by text or email.</p>
-      <div class="row"><a class="btn btn--primary" href="custom-quote.html">Request a quote</a><a class="btn btn--outline" href="tel:{{phone_tel}}">Call {{phone}}</a></div>
-    </div>
-  </div>
-  <div class="grid grid--3">
-    <div class="feature reveal" data-delay="1"><h3>What to have ready</h3><p class="muted mb-0">Driver's license, current address and prior address if under two years, employer and income, and the vehicle you were quoted.</p></div>
-    <div class="feature reveal" data-delay="2"><h3>Who sees it</h3><p class="muted mb-0">Only the bank underwriting your lease and the dealer completing the paperwork. We do not sell or share applicant data.</p></div>
-    <div class="feature reveal" data-delay="3"><h3>Then what</h3><p class="muted mb-0">Most approvals come back within hours during business hours. We call you with the result and the delivery date.</p></div>
-  </div>
-  <p class="form__note">Submitting a credit application authorizes the lending bank to obtain your consumer credit report. Equal Credit Opportunity.</p>
+  <h1>Opening the secure application…</h1>
+  <p class="lead">If nothing happens in a few seconds, use the button below.</p>
+  <a class="btn btn--primary btn--lg" href="{{credit_url}}" rel="noopener">Open the credit application</a>
 </div></section>

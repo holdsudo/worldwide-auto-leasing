@@ -20,11 +20,23 @@ SITE = {
     "phone_tel": "+17325344430",
     "email": "info@worldwideautoleasing.com",   # TODO confirm
     "address": "Serving New York, New Jersey & Pennsylvania",  # TODO street address
-    "hours": "Mon–Fri 9am–7pm · Sat 10am–5pm",
+    "hours": "Mon–Fri 9am–5pm",
+    "credit_url": "https://xdsk.pro/iC37om",
     "tagline": "Making Dreams Come True… Worldwide Serving NY-NJ-PA",
     "year": str(datetime.date.today().year),
     "form_endpoint": "https://formsubmit.co/ajax/info@worldwideautoleasing.com",  # TODO swap for your own handler
 }
+
+CONSENT = (
+    "By checking this box, I agree to receive <strong>text messages</strong> from {name} at the mobile number "
+    "provided, including replies to my inquiry, quote and lease-special information, vehicle availability, and "
+    "appointment or delivery reminders. Messages may be sent using an automated system. Consent is optional and "
+    "is <strong>not a condition of any purchase or lease</strong>. Message frequency varies. Message and data rates "
+    "may apply. Reply <strong>STOP</strong> to cancel at any time or <strong>HELP</strong> for help. Mobile "
+    "information is never shared with third parties or affiliates for marketing. See our "
+    '<a href="privacy.html">Privacy Policy</a> and <a href="sms-terms.html">SMS Terms</a>.'
+)
+SITE["sms_consent_text"] = CONSENT.format(name=SITE["name"])
 
 def parse(fragment: str):
     meta, body = {}, fragment

@@ -37,10 +37,9 @@ scripts: <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/th
           <div class="field"><label for="h-zip">ZIP</label><input id="h-zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" required></div>
         </div>
         <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
-        <label class="consent"><input type="checkbox" name="sms_consent" id="h-sms">
-          <span>By checking this box, I agree to receive <strong>text messages</strong> from {{name}} about my quote, vehicle availability and appointment reminders at the mobile number provided. Message frequency varies. Msg &amp; data rates may apply. Reply <strong>STOP</strong> to cancel, <strong>HELP</strong> for help. Consent is not a condition of purchase. <a href="privacy.html">Privacy Policy</a> &amp; <a href="sms-terms.html">SMS Terms</a>.</span></label>
+        <label class="consent"><input type="checkbox" name="sms_consent" id="h-sms" value="yes"><span>{{sms_consent_text}}</span></label>
         <button class="btn btn--primary btn--block" type="submit">Send my quote request</button>
-        <p class="form__note mb-0">No credit pull for a quote. By submitting you agree to be contacted by phone or email about your request.</p>
+        <p class="form__note mb-0">No credit pull for a quote. We may call or email you about this request. Texts are sent only if you check the box above.</p>
       </form>
     </div>
   </div>

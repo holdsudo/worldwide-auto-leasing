@@ -89,6 +89,7 @@
       if (sms && sms.checked) {                       // proof of consent for 10DLC audits
         payload.sms_consent_text = sms.closest(".consent").textContent.replace(/\s+/g, " ").trim();
         payload.sms_consent_timestamp = new Date().toISOString();
+        payload.sms_consent_version = "2026-10-20";
         payload.sms_consent_page = location.href;
         payload.sms_consent_user_agent = navigator.userAgent;
       }
@@ -109,9 +110,4 @@
     });
   });
 
-  /* ---- credit app embed (xDesk link goes in config) ------------------- */
-  const appFrame = $("#xdesk-app");
-  if (appFrame && window.WWAL.CREDIT_APP_URL) {
-    appFrame.innerHTML = `<iframe src="${window.WWAL.CREDIT_APP_URL}" title="Secure credit application" loading="lazy" allow="payment"></iframe>`;
-  }
 })();

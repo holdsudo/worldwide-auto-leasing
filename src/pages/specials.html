@@ -29,10 +29,9 @@ body_class: page-specials
     </div>
     <div class="field"><label for="s-current">Current lease ending? (brand and month)</label><input id="s-current" name="trade_in" placeholder="Honda lease ends in March"><span class="field__hint">Loyalty and conquest bonuses depend on this.</span></div>
     <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
-    <label class="consent"><input type="checkbox" name="sms_consent" id="s-sms">
-      <span>By checking this box, I agree to receive <strong>text messages</strong> from {{name}} with lease specials, quotes, vehicle availability and appointment reminders at the mobile number provided. Message frequency varies. Msg &amp; data rates may apply. Reply <strong>STOP</strong> to cancel, <strong>HELP</strong> for help. Consent is not a condition of purchase. <a href="privacy.html">Privacy Policy</a> &amp; <a href="sms-terms.html">SMS Terms</a>.</span></label>
+    <label class="consent"><input type="checkbox" name="sms_consent" id="s-sms" value="yes"><span>{{sms_consent_text}}</span></label>
     <button class="btn btn--primary btn--lg" type="submit">Send me the specials</button>
-    <p class="form__note mb-0">No credit pull. By submitting you agree to be contacted by phone or email about your request.</p>
+    <p class="form__note mb-0">No credit pull. We may call or email you about this request. Texts are sent only if you check the box above.</p>
   </form>
   <div class="stack">
     <div class="feature reveal"><span class="eyebrow">What changes monthly</span><h3>Where the deals come from</h3>

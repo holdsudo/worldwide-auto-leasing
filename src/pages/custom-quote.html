@@ -33,10 +33,9 @@ body_class: page-quote
     <div class="field"><label for="q-trade">Trade-in or current lease ending?</label><input id="q-trade" name="trade_in" placeholder="2023 Honda CR-V lease ends in March"></div>
     <div class="field"><label for="q-notes">Anything else</label><textarea id="q-notes" name="notes" placeholder="Colors you would accept, must-have options, best time to call…"></textarea></div>
     <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px">
-    <label class="consent"><input type="checkbox" name="sms_consent" id="q-sms">
-      <span>By checking this box, I agree to receive <strong>text messages</strong> from {{name}} about my quote, vehicle availability and appointment reminders at the mobile number provided. Message frequency varies. Msg &amp; data rates may apply. Reply <strong>STOP</strong> to cancel, <strong>HELP</strong> for help. Consent is not a condition of purchase. <a href="privacy.html">Privacy Policy</a> &amp; <a href="sms-terms.html">SMS Terms</a>.</span></label>
+    <label class="consent"><input type="checkbox" name="sms_consent" id="q-sms" value="yes"><span>{{sms_consent_text}}</span></label>
     <button class="btn btn--primary btn--lg" type="submit">Send quote request</button>
-    <p class="form__note mb-0">No credit pull. By submitting you agree to be contacted by phone or email about your request. We never sell your information.</p>
+    <p class="form__note mb-0">No credit pull. We may call or email you about this request. Texts are sent only if you check the box above. We never sell your information.</p>
   </form>
   <aside class="stack">
     <div class="feature reveal"><div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4 2 7-6.5-4.5L5.5 20l2-7L2 9h7z"/></svg></div><h3>What you get back</h3><p class="muted mb-0">A one-page quote: monthly payment, term, miles, due at signing, acquisition fee, residual and money factor. Nothing hidden in the footnotes.</p></div>

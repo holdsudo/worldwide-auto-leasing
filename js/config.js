@@ -9,5 +9,5 @@ window.WWAL = {
   BRAND: "Worldwide Auto Leasing",
   PHONE: "(732) 534-4430",
   SMS_PROGRAM: "Worldwide Auto Leasing Alerts",
-  CREDIT_APP_URL: ""   /* paste the xDesk credit application URL here */
+  CREDIT_APP_URL: "https://xdsk.pro/iC37om"
 };
