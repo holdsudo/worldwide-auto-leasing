@@ -60,7 +60,7 @@ def main():
         ctx = {**SITE, "slug": page.stem, "body_class": "", "head_extra": "", "scripts": "",
                "description": SITE["tagline"], **meta}
         ctx["nav_" + ctx["slug"].replace("-", "_")] = ' aria-current="page"'
-        html = render(header + body + footer, ctx)
+        html = render(render(header + body + footer, ctx), ctx)   # 2nd pass fills tokens inside head_extra / scripts
         out = ROOT / page.name
         out.write_text(html)
         print("wrote", out.relative_to(ROOT), len(html), "bytes")
