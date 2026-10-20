@@ -1,6 +1,6 @@
 # Worldwide Auto Leasing — website
 
-Static site, hosted on GitHub Pages at **https://jason.joe-miz.com** (custom domain via `CNAME`).
+Static site, hosted on GitHub Pages at **https://worldwideautoleasing.com** (custom domain via `CNAME`).
 
 ## Edit → build → publish
 
@@ -24,4 +24,4 @@ GitHub Pages serves the root of `main`. The built `*.html` files are committed o
 - Privacy policy states mobile information is not shared with third parties/affiliates for marketing. ✔ (`privacy.html`)
 - Public SMS Terms page with program name, frequency, cost, opt-out, help, carriers. ✔ (`sms-terms.html`)
 - Proof of consent captured per submission. ✔ (`js/main.js`)
-- For the campaign form: use `https://jason.joe-miz.com/custom-quote.html` as the opt-in URL and screenshot the consent box; privacy URL `…/privacy.html`; terms URL `…/sms-terms.html`.
+- For the campaign form: use `https://worldwideautoleasing.com/custom-quote.html` as the opt-in URL and screenshot the consent box; privacy URL `…/privacy.html`; terms URL `…/sms-terms.html`.

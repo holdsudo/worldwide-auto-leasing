@@ -14,8 +14,8 @@ SRC = ROOT / "src"
 
 SITE = {
     "name": "Worldwide Auto Leasing",
-    "domain": "jason.joe-miz.com",
-    "url": "https://jason.joe-miz.com",
+    "domain": "worldwideautoleasing.com",
+    "url": "https://worldwideautoleasing.com",
     "phone": "(732) 534-4430",
     "phone_tel": "+17325344430",
     "email": "info@worldwideautoleasing.com",   # TODO confirm
