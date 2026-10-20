@@ -4,7 +4,7 @@
    the first submission sends that inbox a one-time activation email.
    Replace with your own handler (PHP, Worker, CRM webhook) when ready. */
 window.WWAL = {
-  FORM_ENDPOINT: "https://formsubmit.co/ajax/info@worldwideautoleasing.com",
+  FORM_ENDPOINT: "https://formsubmit.co/ajax/jasonmiz@me.com",
   THANK_YOU_URL: "thank-you.html",
   BRAND: "Worldwide Auto Leasing",
   PHONE: "(732) 534-4430",

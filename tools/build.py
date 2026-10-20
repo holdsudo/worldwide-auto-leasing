@@ -24,7 +24,7 @@ SITE = {
     "credit_url": "https://xdsk.pro/iC37om",
     "tagline": "Making Dreams Come True… Worldwide Serving NY-NJ-PA",
     "year": str(datetime.date.today().year),
-    "form_endpoint": "https://formsubmit.co/ajax/info@worldwideautoleasing.com",  # TODO swap for your own handler
+    "form_endpoint": "https://formsubmit.co/ajax/jasonmiz@me.com",  # TODO swap for your own handler
 }
 
 CONSENT = (

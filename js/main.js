@@ -100,7 +100,8 @@
       btn.disabled = true; btn.textContent = "Sending…";
       try {
         const res = await fetch(window.WWAL.FORM_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json", "Accept": "application/json" }, body: JSON.stringify(payload) });
-        if (!res.ok) throw new Error("HTTP " + res.status);
+        const out = await res.json().catch(() => ({}));
+        if (!res.ok || out.success === false || out.success === "false") throw new Error("Form service refused: " + (out.message || res.status));
         location.href = window.WWAL.THANK_YOU_URL + (payload.sms_consent === "YES" ? "?sms=1" : "");
       } catch (err) {
         btn.disabled = false; btn.textContent = label;

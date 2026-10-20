@@ -14,7 +14,7 @@ GitHub Pages serves the root of `main`. The built `*.html` files are committed o
 
 - **Business details** (phone, email, hours, address, tagline): `tools/build.py` → `SITE`, then rebuild. Also `js/config.js` for the phone shown in error toasts.
 - **No inventory by design.** Vehicles = brands and body styles we lease; Specials = a request form for the current month's programs.
-- **Forms**: both forms POST JSON to `WWAL.FORM_ENDPOINT` in `js/config.js` (FormSubmit AJAX by default; the first submission sends the inbox an activation email). Swap for your own handler any time. Every submission with SMS consent carries the exact consent text, timestamp, page and user agent (10DLC proof of consent).
+- **Forms**: both forms POST JSON to `WWAL.FORM_ENDPOINT` in `js/config.js` (FormSubmit AJAX, currently delivering to jasonmiz@me.com; the first submission sends that inbox a one-time activation email). Swap for your own handler any time. Every submission with SMS consent carries the exact consent text, timestamp, page and user agent (10DLC proof of consent).
 - **Credit app**: every "Credit App" link goes straight to the xDesk URL (`credit_url` in `tools/build.py`); `credit-app.html` is a redirect for old links.
 - **Reviews**: `src/pages/reviews.html` and the teaser on `index.html` contain labelled sample reviews. Replace with real Google reviews before launch.
 
